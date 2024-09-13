@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .projects, .skills, .contact, .destinos, .definicoes {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .projects .projeto, .destinos .destino, .definicoes .termo {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #45a049;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .genero {
+            margin-top: 10px;
+        }
+
+        .genero label {
+            margin-right: 10px;
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Portfólio</h1>
+</header>
+
+<!-- Projetos Recentes -->
+<section class="projects">
+    <h2>Projetos Recentes</h2>
+    <div class="projeto">Projeto 1</div>
+    <div class="projeto">Projeto 2</div>
+    <div class="projeto">Projeto 3</div>
+</section>
+
+<!-- Habilidades -->
+<section class="skills">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>React</li>
+    </ul>
+</section>
+
+<!-- Destinos Populares -->
+<section class="destinos">
+    <h2>Destinos Populares</h2>
+    <p class="destino">Rio de Janeiro: Cidade famosa por suas praias, como Copacabana e Ipanema, e pelo Cristo Redentor.</p>
+    <p class="destino">Paris: Capital da França, conhecida pela Torre Eiffel, museus e gastronomia refinada.</p>
+    <p class="destino">New York: Cidade vibrante nos EUA, famosa por sua vida cultural, Times Square e a Estátua da Liberdade.</p>
+</section>
+
+<!-- Lista de Definição: Termos de Programação -->
+<section class="definicoes">
+    <h2>Lista de Definição: Termos de Programação</h2>
+    <p class="termo">HTML: Linguagem de Marcação para construção de páginas web.</p>
+    <p class="termo">CSS: Folhas de estilo usadas para estilizar páginas HTML.</p>
+    <p class="termo">JavaScript: Linguagem de programação usada para adicionar interatividade às páginas web.</p>
+</section>
+
+<!-- Formulário de Contato -->
+<section class="contact">
+    <h2>Entre em contato</h2>
+    <form action="/enviar-mensagem" method="post">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <p></p>
+
+        <label for="email">Seu E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <p></p>
+
+        <label for="mensagem">Sua Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <p></p>
+
+        <input type="submit" value="Enviar Mensagem">
+    </form>
+</section>
+
+<!-- Formulário de Contato com Seleção de Gênero -->
+<section class="contact">
+    <h2>Entre em contato</h2>
+    <form action="/Enviar" method="post">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <p></p>
+
+        <label for="email">Seu E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <p></p>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <p></p>
+
+        <div class="genero">
+            <label>Escolha seu gênero:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label>
+        </div>
+        <p></p>
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<!-- Link "Voltar ao topo" -->
+<a href="#top" class="back-to-top">Voltar ao topo</a>
+
+<!-- Adicionando uma âncora no topo da página -->
+<a id="top"></a>
+
+</body>
+</html>

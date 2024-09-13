@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>Atividade3</title>
+<style>
+
+
+	 .Lista de Definição: Termos de Programação {
+            display: inline-block;
+            margin-right: 10px; /* Espaço entre os projetos */
+            padding: 10px;
+            border: 1px solid #000; /* Borda opcional para visualização */
+        }
+
+
+	  /* Estilo para a seleção de gênero */
+        .genero {
+            margin-top: 10px;
+        }
+
+        .genero label {
+            margin-right: 10px;
+        } 
+
+	     /* Estilo para o link "Voltar ao topo" */
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007BFF; /* Azul */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3; /* Azul escuro ao passar o mouse */
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+
+<h1>Lista de Definição: Termos de Programação</h1>
+
+<!-- Aplicando a classe "definicoes" aos parágrafos para estilo -->
+<p class="definicoes">HTML: Linguagem de Marcação para construção de páginas web.</p>
+<p class="definicoes">CSS: Folhas de estilo usadas para estilizar páginas HTML.</p>
+<p class="definicoes">JavaScript: Linguagem de programação usada para adicionar interatividade às páginas web.</p>
+
+
+	<section class = "contact">
+	<h2> Entre em contato</h2>
+	<from action = "/Enviar" method = "post">
+
+
+	<label for = "nome">Seu Nome:</label>
+	<input type = "text" id=Nome name = "Nome" required>
+	<p></p>
+	
+	<label for= "email">Seu E-mail:</label>
+	<input type=Email" id ="Email" name="Email" required>
+	<p></p>
+	<label for="mensagem">Senha:</label>
+                <textarea id="Senha" name="Senha" required></textarea>
+	<p></p>
+
+	     <!-- Adicionando seleção de gênero -->
+        <div class="genero">
+            <label>Escolha seu gênero:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label>
+        </div>
+        <p></p>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+
+<!-- Link "Voltar ao topo" -->
+<a href="#top" class="back-to-top">Voltar ao topo</a>
+
+<!-- Adicionando um âncora no topo da página -->
+<a id="top"></a>
+</body>
+</html>
